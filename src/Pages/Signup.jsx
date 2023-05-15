@@ -19,8 +19,8 @@ export const Signup = () => {
             <div className="flex place-content-center gap-4 py-2 px-10 bg-button font-semibold rounded-lg hover:bg-transparent border-2 border-button mt-4 cursor-pointer">
               {/* to="http://localhost:8080/auth/google" */}
 
-              {/* <Link to="https://salva-vjxd.onrender.com/auth/google"> */}
-              <Link to="http://localhost:8080/auth/google">
+              <Link to="https://salva-vjxd.onrender.com/auth/google">
+              {/* <Link to="http://localhost:8080/auth/google"> */}
                 <Button title={<FaGoogle />} btnstyles="py-3 rounded-full" />
                 <Button title="Create an Account" btnstyles="" />
               </Link>
