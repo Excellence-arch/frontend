@@ -35,7 +35,7 @@ export const Footer = () => {
                 <div className='flex flex-col'>
                     <Link className='text-white hover:text-button' to='/about' >About Us</Link>
                     <Link className='text-white hover:text-button' to='/jobs' >Careers</Link>
-                    <Link className='text-white hover:text-button' to='/blog' >Blog</Link>
+                    <Link className='text-white hover:text-button' to='/homepage' >Blog</Link>
                     <Link className='text-white hover:text-button' to='/newsletter' >Newsletter</Link>
                 </div>
             </div>
