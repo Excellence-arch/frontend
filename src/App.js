@@ -1,37 +1,42 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./Pages/Home";
-import { Signup } from "./Pages/Signup"
+import { Signup } from "./Pages/Signup";
 import { Login } from "./Pages/Login";
 import { About } from "./Pages/About";
+import { Auth } from "./Pages/Auth";
 import { Page404 } from "./Pages/Page404";
 import { HomePage } from "./Pages/Dashboard/HomePage";
 
 const router = createBrowserRouter([
   {
     path: "*",
-    element: <Page404 />
+    element: <Page404 />,
   },
   {
     path: "/",
-    element: <Home />
+    element: <Home />,
   },
   {
     path: "/login",
-    element: <Login />
+    element: <Login />,
   },
   {
     path: "/signup",
-    element: <Signup />
+    element: <Signup />,
   },
   {
     path: "/about",
-    element: <About />
+    element: <About />,
+  },
+  {
+    path: "/auth",
+    element: <Auth />,
   },
   {
     path: "/homepage",
-    element: <HomePage />
-  }
-])
+    element: <HomePage />,
+  },
+]);
 
 function App() {
   return (
