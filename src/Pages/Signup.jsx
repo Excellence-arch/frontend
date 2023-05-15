@@ -19,15 +19,15 @@ export const Signup = () => {
                     <div className='flex flex-col md:w-1/2 px-10 py-10 gap-6 my-auto'>
                         <div className='flex place-content-center gap-4 py-2 px-10 bg-button font-semibold rounded-lg hover:bg-transparent border-2 border-button mt-4 cursor-pointer'>
                             <Button title={<FaGoogle />} btnstyles="py-3 rounded-full" />
-                            <Button title="Log In" btnstyles="" />
+                            <Button title="Create an Account" btnstyles="" />
                         </div>
                         <div className='flex place-content-center gap-4 py-2 px-10 bg-button font-semibold rounded-lg hover:bg-transparent border-2 border-button mt-4 cursor-pointer'>
                             <Button title={<FaTwitter />} btnstyles="py-3 rounded-full" />
-                            <Button title="Log In" btnstyles="" />
+                            <Button title="Create an Account" btnstyles="" />
                         </div>
                         <div className='flex place-content-center gap-4 py-2 px-10 bg-button font-semibold rounded-lg hover:bg-transparent border-2 border-button mt-4 cursor-pointer'>
                             <Button title={<FaFacebookF />} btnstyles="py-3 rounded-full" />
-                            <Button title="Log In" btnstyles="" />
+                            <Button title="Create an Account" btnstyles="" />
                         </div>
                         <div>Already have an account? <Link to="/login" className='text-white hover:text-button'>Log in</Link></div>
                     </div>
