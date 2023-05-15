@@ -8,7 +8,7 @@ const Auth = () => {
   useEffect(() => {
     localStorage.setItem("token", token);
     navigate("/homepage");
-  }, []);
+  });
   return <></>;
 };
 
