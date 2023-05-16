@@ -13,20 +13,18 @@ export const Login = () => {
         <div className="px-10 py-10">
           <div className="flex flex-col gap-6 md:w-4/6 md:mx-auto md:justify-center">
             <div className="text-4xl font-bold mb-6">Log in</div>
-            <div className="flex place-content-center gap-4 py-2 px-10 bg-button font-semibold rounded-lg hover:bg-transparent border-2 border-button mt-4 cursor-pointer">
-              <Link to="https://salva-vjxd.onrender.com/auth/google">
-                <Button title={<FaGoogle />} btnstyles="py-3 rounded-full" />
-                <Button title="SignIn" btnstyles="" />
-              </Link>
-            </div>
-            <div className="flex place-content-center gap-4 py-2 px-10 bg-button font-semibold rounded-lg hover:bg-transparent border-2 border-button mt-4 cursor-pointer">
+            <Link to="https://salva-vjxd.onrender.com/auth/google" className="flex place-content-center gap-4 px-10 bg-button font-semibold rounded-lg hover:bg-transparent border-2 border-button mt-4 cursor-pointer">
+              <Button title={<FaGoogle />} btnstyles="py-3 rounded-full" />
+              <Button title="Sign In" btnstyles="" />
+            </Link>
+            <Link className="flex place-content-center gap-4 px-10 bg-button font-semibold rounded-lg hover:bg-transparent border-2 border-button mt-4 cursor-pointer">
               <Button title={<FaTwitter />} btnstyles="py-3 rounded-full" />
-              <Button title="Log In" btnstyles="" />
-            </div>
-            <div className="flex place-content-center gap-4 py-2 px-10 bg-button font-semibold rounded-lg hover:bg-transparent border-2 border-button mt-4 cursor-pointer">
+              <Button title="Sign In" />
+            </Link>
+            <Link className="flex place-content-center gap-4 px-10 bg-button font-semibold rounded-lg hover:bg-transparent border-2 border-button mt-4 cursor-pointer">
               <Button title={<FaFacebookF />} btnstyles="py-3 rounded-full" />
-              <Button title="Log In" btnstyles="" />
-            </div>
+              <Button title="Sign In" />
+            </Link>
             <div className="text-center">
               Don't have an account?{" "}
               <Link to="/signup" className="hover:text-button">

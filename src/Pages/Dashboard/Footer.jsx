@@ -5,8 +5,8 @@ import { ImLocation } from 'react-icons/im'
 
 export const Footer = () => {
     return (
-        <div>
-            <div className='flex justify-evenly absolute bottom-0 left-0 right-0 py-8'>
+        <div className=''>
+            <div className='flex justify-evenly py-10'>
                 <div className='hover:text-button hover:bg-white border p-4 rounded-full'>
                     <HiUserGroup />
                 </div>

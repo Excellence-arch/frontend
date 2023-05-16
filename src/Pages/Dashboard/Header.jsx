@@ -14,12 +14,12 @@ export const Header = () => {
 
     return (
         <>
-            <div className="flex py-6 px-10 md:px-6 lg:px-10 text-xl" >
+            <div className="flex py-6 px-5 md:px-10 md:px-6 lg:px-10 text-xl" >
                 <div className="flex-start my-auto">
                     <Button title={showMenu ? <AiOutlineClose /> : <FiMenu />} onclick={toggleMenu} />
                 </div>
                 <div className="mx-auto">
-                    <Link to='/' className=''>
+                    <Link to='/homepage' className=''>
                         <img className="h-10" src={logo} alt="salva logo" srcset="" />
                     </Link>
                 </div>
@@ -30,7 +30,7 @@ export const Header = () => {
                         <Link to='/'>Profile</Link>
                     </div>
                     <div className='hover:text-button'>
-                        <Link to='/about'>Emergency Contacts</Link>
+                        <Link to='/contact'>Emergency Contacts</Link>
                     </div>
                     <div className='hover:text-button my-5'>
                         <Link to='/faqs'>Location Sharing</Link>

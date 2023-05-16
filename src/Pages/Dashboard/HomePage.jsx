@@ -5,12 +5,12 @@ import { Footer } from "./Footer";
 
 export const HomePage = () => {
   return (
-    <div>
+    <div className="">
       <Header />
-      <div className="flex place-items-center py-20">
+      <div className="flex justify-center items-center h-screen">
         <Button
           title="SOS"
-          btnstyles="bg-button shadow rounded-full text-5xl w-[5em] md:w-[7em] py-[2em] h-[5em] md:h-[7em] text-center mx-auto my-auto"
+          btnstyles="bg-button shadow rounded-full text-5xl w-[5em] md:w-[7em] h-[5em] md:h-[7em] text-center"
         />
       </div>
       <Footer />
