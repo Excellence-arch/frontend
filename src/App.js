@@ -6,6 +6,7 @@ import { About } from "./Pages/About";
 import { Auth } from "./Pages/Auth";
 import { Page404 } from "./Pages/Page404";
 import { HomePage } from "./Pages/Dashboard/HomePage";
+import { Contacts } from "./Pages/Dashboard/Contacts";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/homepage",
     element: <HomePage />,
+  },
+  {
+    path: "/contact",
+    element: <Contacts />,
   },
 ]);
 
