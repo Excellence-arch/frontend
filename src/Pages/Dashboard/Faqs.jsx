@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import classNames from 'classnames';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../../components/Button';
 
 export const Faqs = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
   const navigate = useNavigate();
+
   const toggleAccordion = (index) => {
     setActiveAccordion(activeAccordion === index ? null : index);
   };
@@ -45,18 +45,17 @@ export const Faqs = () => {
         {faqData.map((faq, index) => (
           <div key={index} className="my-4 md:w-2/3 md:mx-10">
             <button
-              className={classNames(
-                'accordion flex justify-between items-center w-full px-4 py-3 border rounded',
-                { 'bg-none': activeAccordion === index }
-              )}
+              className={`accordion flex justify-between items-center w-full px-4 py-3 border rounded ${
+                activeAccordion === index ? '' : 'bg-none'
+              }`}
               onClick={() => toggleAccordion(index)}
             >
               <span className="font-semibold">{faq.question}</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className={classNames('h-6 w-6 transform', {
-                  'rotate-180': activeAccordion === index,
-                })}
+                className={`h-6 w-6 transform ${
+                  activeAccordion === index ? 'rotate-180' : ''
+                }`}
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -74,7 +73,6 @@ export const Faqs = () => {
             )}
           </div>
         ))}
-
       </div>
     </div>
   );
