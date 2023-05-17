@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import { Button } from '../../components/Button'
-import { Header } from './Header'
+import { useNavigate } from 'react-router-dom'
+import { Footer } from './Footer';
 
 export const Contacts = () => {
   const [showForm, setshowForm] = useState(false);
   const [contacts, setContacts] = useState([]);
   const [name, setName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
+  const navigate = useNavigate();
+
 
   const toggleForm = () => {
     setshowForm(!showForm);
@@ -32,9 +35,13 @@ export const Contacts = () => {
     // setShowForm(false); // Hide the form after saving the contact
   };
 
+  const handleBackButton = () => {
+    navigate(-1); // Go back to the previous route
+  };
+
   return (
-    <div>
-      <Header />
+    <div className='mt-6 px-6'>
+      <Button title='Back' btnstyles='hover:text-button' onclick={handleBackButton} />
       <div className="h-screen flex flex-col gap-6 justify-center items-center">
         {showForm ? <div className='fixed inset-0 flex items-center justify-center bg-black bg-opacity-50'>
           <div className='bg-paragraph w-2/3 rounded-lg py-10'>
@@ -57,7 +64,7 @@ export const Contacts = () => {
               <Button
                 title="Cancel"
                 btnstyles="py-3 bg-button font-semibold rounded-lg border-2 border-button mt-4"
-                onClick={() => {console.log(showForm)}}
+                onClick={() => { console.log(showForm) }}
               />
             </div>
           </div>
@@ -69,6 +76,7 @@ export const Contacts = () => {
             </div>
           </div>}
       </div>
+      <Footer />
     </div>
   )
 }
