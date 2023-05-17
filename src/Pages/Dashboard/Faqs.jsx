@@ -38,7 +38,7 @@ export const Faqs = () => {
   };
 
   return (
-    <div className="mx-auto mt-6 px-6 h-screen">
+    <div className="mx-auto mt-6 px-6">
       <Button title='Back' btnstyles='hover:text-button' onclick={handleBackButton} />
       <div>
         <div className="text-3xl font-semibold text-center my-10">Frequently asked Questions</div>

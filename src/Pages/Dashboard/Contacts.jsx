@@ -40,8 +40,8 @@ export const Contacts = () => {
   };
 
   return (
-    <div className='mt-6 px-6'>
-      <Button title='Back' btnstyles='hover:text-button' onclick={handleBackButton} />
+    <div className=''>
+      <Button title='Back' btnstyles='hover:text-button mt-6 px-6' onclick={handleBackButton} />
       <div className="h-screen flex flex-col gap-6 justify-center items-center">
         {showForm ? <div className='fixed inset-0 flex items-center justify-center bg-black bg-opacity-50'>
           <div className='bg-paragraph w-2/3 rounded-lg py-10'>
